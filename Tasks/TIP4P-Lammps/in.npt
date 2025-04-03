@@ -1,0 +1,51 @@
+#Инициализация симмуляции
+units           real
+atom_style      full
+boundary        p p p
+
+# Настройка силового поля
+pair_style      lj/cut/tip4p/long 1 2 1 1 0.1546 12 
+kspace_style    pppm/tip4p 1.0e-4
+
+# Настройка связей и углов
+bond_style      harmonic
+angle_style     harmonic
+
+read_data tip4p-NPT.data
+
+# Параметры потенциалов
+pair_coeff      1 1 0.18521 3.1589 # O-O
+pair_coeff      2 2 0.0    0.0     # H-H
+pair_coeff      1 2 0.0    0.0     # O-H
+pair_modify     tail yes
+
+bond_coeff      1 1000.0 0.9572    # O-H
+angle_coeff     1 100.0 104.52     # H-O-H
+
+# Группировка атомов
+group           gH2O type 1 2
+group           oxygen type 1
+group           hydrogen type 2
+
+
+# Настройка соседних списков
+neighbor        3.0 bin
+neigh_modify    delay 0 every 1 check yes
+
+
+variable        massAll equal mass(all)/6.022e23
+variable        volCm3  equal vol*1.0e-24
+variable        density_sys equal v_massAll/v_volCm3
+compute         msdO oxygen msd 
+
+
+# ------------------------NPT моделирование-------------------
+fix npt all npt temp 300.0 300.0 100.0 iso 1.0 1.0 1000.0 # NPT термостат и баростат Ланжевена
+
+fix msd all ave/time 1 1 1000 c_msdO[*] file msd_oxygen.out
+
+thermo_style custom step temp press etotal v_density_sys pe ke c_msdO[4]
+thermo 1000 # вывод каждые 1000 шагов
+
+
+run 500000 # Запуск NPT моделирования на 40000 шагов

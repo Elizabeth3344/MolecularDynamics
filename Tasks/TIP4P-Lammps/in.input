@@ -1,0 +1,62 @@
+#Инициализация симмуляции
+units           real
+atom_style      full
+boundary        p p p
+
+#Загрузка и репликация системы
+read_data       1H2O
+replicate       10 10 10
+
+# Настройка силового поля
+pair_style      lj/cut/tip4p/long 1 2 1 1 0.1546 12 
+kspace_style    pppm/tip4p 1.0e-4
+
+# Настройка связей и углов
+bond_style      harmonic
+angle_style     harmonic
+
+# Параметры потенциалов
+pair_coeff      1 1 0.18521 3.1589 # O-O
+pair_coeff      2 2 0.0    0.0     # H-H
+pair_coeff      1 2 0.0    0.0     # O-H
+pair_modify     tail yes
+
+bond_coeff      1 1000.0 0.9572    # O-H
+angle_coeff     1 100.0 104.52     # H-O-H
+
+# Группировка атомов
+group           gH2O type 1 2
+group           oxygen type 1
+group           hydrogen type 2
+
+
+# Настройка соседних списков
+neighbor        3.0 bin
+neigh_modify    delay 0 every 1 check yes
+
+# Инициализация скоростей
+velocity        all create 298.15 12345 dist gaussian
+fix             1 gH2O shake 1.0e-4 100 0 b 1 a 1
+
+variable        massAll equal mass(all)/6.022e23
+variable        volCm3  equal vol*1.0e-24
+variable        density_sys equal v_massAll/v_volCm3
+
+# -------------------------NVT релаксация----------------------
+fix nvt all nvt temp 300.0 300.0 100.0 # NVT термостат Ланжевена
+thermo_style custom step temp press etotal v_density_sys pe ke # сами задаем параметры термодинамики, которые хотим вывести
+thermo 1000 # вывод каждые 1000 шагов
+
+dump         1 all custom 100 snaps/traj.lammpstrj id type x y z vx vy vz
+
+run 10000 # Запуск NVT релаксации на 10000 шагов
+
+unfix nvt # отключаем nvt
+# ------------------------NPT моделирование-------------------
+fix npt all npt temp 300.0 300.0 100.0 iso 1.0 1.0 1000.0 # NPT термостат и баростат Ланжевена
+thermo_style custom step temp press etotal v_density_sys pe ke
+thermo 1000 # вывод каждые 1000 шагов
+
+run 40000 # Запуск NPT моделирования на 40000 шагов
+
+write_data tip4p-NPT.data pair ij
