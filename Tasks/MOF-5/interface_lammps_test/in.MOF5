@@ -13,12 +13,31 @@ dielectric      1.0
 pair_modify     tail yes mix arithmetic
 special_bonds   lj/coul 0.0 0.0 1.0
 box tilt        large
-read_data       data.MOF5
+read_data       /home/chernysheva/MolecularDynamics/Tasks/MOF-5/interface_lammps_test/data.MOF5
 
 #### Atom Groupings ####
 group           fram     id   1:424
 #### END Atom Groupings ####
 
+
+# 4. NVT релаксация
+reset_timestep  0
+thermo          100
+thermo_style    custom step temp pe ke etotal press vol
+velocity        all create 300.0 4928459 rot yes dist gaussian
+
+fix             nvt all nvt temp 300.0 300.0 100.0
+timestep        1.0
+run             5000
+unfix           nvt
+
+# 5. Оптимизация геометрии (минимизация энергии)
+# reset_timestep  0
+# thermo          10
+# thermo_style    custom step pe etotal evdwl ecoul epair emol elong
+
+# min_style       cg
+# minimize        1.0e-6 1.0e-8 1000 10000
 min_style       cg
 print           "MinStep,CellMinStep,AtomMinStep,FinalStep,Energy,EDiff" file MOF5.min.csv screen no
 variable        min_eval   equal 1.00e-06
@@ -42,3 +61,6 @@ variable        prev_E     equal ${temppe}
 next            iter
 jump            SELF loop_min
 label           break_min
+
+# 6. Сохранение результатов
+write_data      /home/chernysheva/MolecularDynamics/Tasks/MOF-5/interface_lammps_test/MOF-5_optimized.data

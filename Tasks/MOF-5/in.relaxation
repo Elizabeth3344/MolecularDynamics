@@ -11,7 +11,7 @@ dihedral_style  harmonic
 improper_style  harmonic
 
 # 2. Чтение данных MOF-5
-read_data       ../../MolecularDynamics/Tasks/MOF-5/MOF5.data
+read_data       /home/chernysheva/MolecularDynamics/Tasks/MOF-5/MOF5.data
 
 # 3. Выбор силового поля
 # Силовое поле UFF
@@ -50,5 +50,4 @@ min_style       cg
 minimize        1.0e-6 1.0e-8 1000 10000
 
 # 6. Сохранение результатов
-write_data      MOF-5_optimized.data
-
+write_data      /home/chernysheva/MolecularDynamics/Tasks/MOF-5/MOF-5_optimized.data
