@@ -1,2 +1,240 @@
 LAMMPS (29 Aug 2024 - Update 2)
-log             log.MOF5 append
+units           real
+atom_style      full
+boundary        p p p
+
+pair_style      lj/cut/coul/long 12
+bond_style      harmonic
+angle_style     hybrid cosine/squared harmonic
+dihedral_style  charmm
+improper_style  umbrella
+
+special_bonds   dreiding
+dielectric      1.0
+box tilt        large
+
+The 'box' command has been removed and will be ignored
+
+read_data       thermo.data
+Reading data file ...
+  triclinic box = (0 0 0) to (17.8276 19.387 17.062815) with tilt (0 -8.283418 0)
+  1 by 2 by 2 MPI processor grid
+  reading atoms ...
+  367 atoms
+  reading velocities ...
+  367 velocities
+  scanning bonds ...
+  5 = max bonds/atom
+  scanning angles ...
+  10 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (17.8276 19.387 17.062815) with tilt (0 -8.283418 0)
+  1 by 2 by 2 MPI processor grid
+  reading bonds ...
+  474 bonds
+  reading angles ...
+  965 angles
+  reading dihedrals ...
+  832 dihedrals
+  reading impropers ...
+  576 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        1       
+  special bond factors coul:  0        0        1       
+     5 = max # of 1-2 neighbors
+     8 = max # of 1-3 neighbors
+    13 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_data CPU = 0.009 seconds
+
+neigh_modify    every 1 delay 0 check yes
+
+kspace_style    pppm 1e-6
+pair_modify     tail yes mix arithmetic
+
+# replicate 2 2 2
+
+# ******* molecules ******
+molecule co2_mol CO2.txt
+Read molecule template co2_mol:
+# CO2 molecule file. TraPPE model.
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+############################   SIMULATION   #################################
+group           mof     type 1 2 3 4 5
+352 atoms in group mof
+group           co2     type 6 7
+15 atoms in group co2
+
+compute         co2T co2 temp
+compute_modify  co2T dynamic/dof yes
+compute         mofT mof temp
+
+variable N_co2  equal count(co2)/3
+
+timestep 0.1
+
+dump dco2 co2 atom 100 dump_co2.lammpstrj
+dump dall all atom 100 dump_all.lammpstrj
+
+# fix NVT all nvt temp 323.0 323.0 100.0
+
+fix NPT all npt temp 298.0 298.0 100.0 iso 100.0 100.0 10.0
+
+# fix NPT all npt temp 323.0 323.0 100.0 iso 1.0 1.0 1000.0
+
+# thermo          10
+# thermo_style    custom step temp press density atoms
+
+# run 1000
+
+# thermo          10
+# thermo_style    custom step temp press density atoms
+
+# fix NPT co2 npt temp 300.0 300.0 100.0 iso 1.0 1.0 1000.0
+
+# fix below works with the MPI
+# because this not allow translations (only вставки и удаления)
+# fix GCMC co2 gcmc 10 100 *0*  0 1263 298 -5 0.5 mol co2_mol full_energy tfac_insert 1.6 group co2 overlap_cutoff 1.5
+
+# fix GCMC co2 gcmc 10 100 0 0 1263 323.0 -5 0.5 mol co2_mol pressure 10.0 #     full_energy tfac_insert 1.6 group co2 overlap_cutoff 1.5
+
+fix GCMC co2 gcmc 10 100 0 0 1263 298.0 -5 0.5 mol co2_mol pressure 100.0
+
+# fix GCMC co2 gcmc 10 100 100  0 1263 298 -5 0.5 mol co2_mol pressure 1.0 #     full_energy tfac_insert 1.6 group co2 overlap_cutoff 1.5
+
+fix AVE all ave/time 10 100 1000 v_N_co2
+
+thermo          10
+thermo_style    custom step temp press density atoms v_N_co2
+
+run            100000
+PPPM initialization ...
+WARNING: System is not charge neutral, net charge = 8e-05 (src/kspace.cpp:327)
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.27605598
+  grid = 18 20 24
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.00017159705
+  estimated relative force accuracy = 5.1675942e-07
+  using double precision FFTW3
+  3d grid and FFT values/proc = 8075 2160
+Generated 21 of 21 mixed pair_coeff terms from arithmetic mixing rule
+WARNING: Fix gcmc using full_energy option (src/MC/fix_gcmc.cpp:544)
+0 atoms in group FixGCMC:gcmc_exclusion_group:GCMC
+0 atoms in group FixGCMC:rotation_gas_atoms:GCMC
+WARNING: Neighbor exclusions used with KSpace solver may give inconsistent Coulombic energies (src/neighbor.cpp:666)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 14
+  ghost atom cutoff = 14
+  binsize = 7, bins = 4 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut/coul/long, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton/tri
+      stencil: half/bin/3d/tri
+      bin: standard
+WARNING: Inconsistent image flags (src/domain.cpp:1051)
+Per MPI rank memory allocation (min/avg/max) = 14.53 | 14.54 | 14.55 Mbytes
+   Step          Temp          Press         Density        Atoms       v_N_co2    
+         0   298.89686     -43975.646      1.6608303            367   5            
+        10   311.00135      12657.989      1.7223603            367   5            
+        20   317.76719      19574.685      1.7371037            367   5            
+        30   316.65064     -16022.476      1.7102078            367   5            
+        40   313.70824     -3884.2998      1.732153             367   5            
+        50   307.62869      13569.084      1.755989             367   5            
+        60   306.48494     -3704.8431      1.7390303            367   5            
+        70   311.13926     -6946.7418      1.7324917            367   5            
+        80   315.22228      6858.9646      1.742053             367   5            
+        90   312.43971      1531.4627      1.7332543            367   5            
+       100   310.66425     -6012.9055      1.7258937            367   5            
+       110   317.52147      1773.5666      1.7390667            367   5            
+       120   326.0121       3267.4223      1.7496626            367   5            
+       130   332.23514     -3412.8582      1.7536787            367   5            
+       140   337.01173     -696.57074      1.7664951            367   5            
+       150   339.88011      3472.1688      1.7776069            367   5            
+       160   340.22564     -746.81541      1.7759957            367   5            
+       170   337.40441     -1886.2885      1.7741445            367   5            
+       180   333.71951      2022.927       1.7759555            367   5            
+       190   333.54692      663.22402      1.7730429            367   5            
+       200   338.78194     -2106.2631      1.771054             367   5            
+       210   343.68123      422.74321      1.7774905            367   5            
+       220   339.77744      1505.2099      1.7847618            367   5            
+       230   329.58491     -1108.6271      1.7888289            367   5            
+       240   323.44541     -443.98924      1.794797             367   5            
+       250   324.37821      1692.363       1.7995272            367   5            
+       260   324.20967     -3.0232673      1.797635             367   5            
+       270   315.28139     -1113.5433      1.7947548            367   5            
+       280   302.51464      863.12203      1.794958             367   5            
+       290   298.76919      668.57325      1.7940867            367   5            
+       300   309.28217     -1129.1265      1.7932691            367   5            
+       310   323.62089      58.763482      1.796953             367   5            
+       320   327.00606      1222.3829      1.8010333            367   5            
+       330   318.85779     -382.36566      1.80121              367   5            
+       340   312.42005     -477.16613      1.8006139            367   5            
+       350   316.49044      1147.0373      1.7992932            367   5            
+       360   324.98892      209.09978      1.7940106            367   5            
+       370   327.26545     -1062.2693      1.7888921            367   5            
+       380   323.25238      404.21479      1.7886771            367   5            
+       390   322.29883      757.56563      1.7900372            367   5            
+       400   330.54203     -868.54172      1.791546             367   5            
+       410   342.40896     -96.582574      1.7962287            367   5            
+       420   346.92052      1370.6117      1.8004118            367   5            
+       430   341.42442     -106.33302      1.7986367            367   5            
+       440   333.22414     -710.57111      1.7940567            367   5            
+       450   329.03939      1093.1261      1.7890037            367   5            
+       460   328.12433      376.02986      1.7805063            367   5            
+       470   327.49099     -1425.6278      1.7725773            367   5            
+       480   328.22521      251.76989      1.7718455            367   5            
+       490   331.19722      1135.3223      1.7744621            367   5            
+       500   334.12059     -1114.9748      1.7769886            367   5            
+       510   333.73713     -341.74369      1.7834687            367   5            
+       520   329.04323      2066.0732      1.7896496            367   5            
+       530   323.70065     -126.36933      1.7868874            367   5            
+       540   320.553       -1460.0921      1.7801704            367   5            
+       550   317.30803      1671.3489      1.774569             367   5            
+       560   310.35519      772.66527      1.7641097            367   5            
+       570   303.25499     -2617.2393      1.75343              367   5            
+       580   305.45282      433.85632      1.7540059            367   5            
+       590   316.02563      2330.0908      1.7586872            367   5            
+       600   324.19638     -2301.164       1.7608786            367   5            
+       610   322.85813     -1008.1626      1.7708811            367   5            
+       620   313.56544      4053.1036      1.783112             367   5            
+       630   306.66894     -555.56618      1.7809366            367   5            
+       640   308.15109     -3409.1067      1.7751449            367   5            
+       650   312.11305      3617.0549      1.7753713            367   5            
+       660   308.64349      1881.539       1.765261             367   5            
+       670   299.15531     -5482.3284      1.7512184            367   5            
+       680   298.04207      1133.7667      1.7558803            367   5            
+       690   307.14511      5173.2789      1.7629833            367   5            
+       700   316.72869     -4926.5018      1.7597719            367   5            
+       710   320.66624     -2542.119       1.7714126            367   5            
+       720   316.07011      7765.9708      1.7900408            367   5            
+       730   310.64908     -1217.5604      1.7850133            367   5            
+       740   312.69844     -6780.5847      1.7785902            367   5            
+       750   319.61991      6229.6089      1.7872791            367   5            
+       760   321.88827      3781.0094      1.7785397            367   5            
+       770   318.19135     -8570.2813      1.7608659            367   5            
+       780   319.50944      1219.0762      1.7694283            367   5            
+       790   323.93604      7635.6097      1.7787963            367   5            
+       800   325.65594     -5924.7681      1.771264             367   5            
+       810   327.14471     -3912.8015      1.7814939            367   5            
+       820   326.78918      8229.4406      1.801381             367   5            
+       830   325.43603     -451.90969      1.797219             367   5            
+       840   325.08446     -6667.9183      1.7921632            367   5            
+       850   323.34619      4633.3765      1.802364             367   5            
+       860   317.94733      3799.4829      1.799119             367   5            
+       870   313.8438      -5979.8952      1.7874954            367   5            
+       880   316.51496     -55.277836      1.7940596            367   5            
+       890   318.19458      5263.1663      1.8024347            367   
