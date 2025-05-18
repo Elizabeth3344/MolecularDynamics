@@ -1,0 +1,80 @@
+# ------------------- ИНИЦИАЛИЗАЦИЯ -------------------
+units       real
+atom_style  full
+boundary    p p p
+pair_style  lj/cut/coul/long 12.0
+pair_modify mix arithmetic # Взаимодействия между разными типами (правило Лоренца-Бертло)
+bond_style  harmonic
+angle_style harmonic
+dihedral_style harmonic
+
+read_data   /home/chernysheva/MolecularDynamics/Tasks/MOF-5/interface_lammps_test/MOF-5_optimized.data
+
+# ------------------- ДОБАВЛЕНИЕ МОЛЕКУЛ CO2 -------------------
+molecule    co2_mol /home/chernysheva/MolecularDynamics/Tasks/MOF-5/interface_lammps_test/CO2.txt
+
+group mof type 1 2 3 4 5
+group co2_mol type 6 7
+
+# # ------------------- СИЛОВЫЕ ПОЛЯ -------------------
+# # Параметры TraPPE для CO₂
+# pair_coeff  1 1 0.234 2.80    # C (CO2) - TraPPE
+# pair_coeff  2 2 0.669 3.05    # O (CO2) - TraPPE
+
+# # Жесткие связи и углы для CO2
+# bond_coeff  1 0.0 1.16        # Фиксированная связь C=O (k=0)
+# angle_coeff 1 0.0 180.0       # Фиксированный угол O=C=O
+
+# ------------------- НАСТРОЙКА GCMC -------------------
+variable T equal 273.0
+# variable P array 0.1 0.5 1.0 2.0 5.0 10.0  # бар
+# variable mu array -23.5 -21.8 -20.9 -19.7 -17.9 -16.2  # kT
+variable P string "0.1 0.5 1.0 2.0 5.0 10.0"
+variable mu string "-23.5 -21.8 -20.9 -19.7 -17.9 -16.2"
+
+# Количество точек
+variable n equal 6
+
+# Создаем файл для результатов
+print "Давление(бар) Масса_CO2(г)" file /home/chernysheva/MolecularDynamics/Tasks/MOF-5/interface_lammps_test/isotherm.txt
+
+# Цикл по давлениям
+variable i loop 1 ${n}
+label loop
+# Получаем текущие значения
+variable p equal getword(${P}, ${i})
+variable m equal getword(${mu}, ${i})
+
+print "Точка ${i} из ${n}: P=${p} бар, mu=${m} kT"
+# variable i loop ${$P}
+# variable p equal P[$i]
+# variable m equal mu[$i]
+
+# print "Текущее давление: ${p} атм, mu: ${m} kT"
+
+# ------------------- GCMC СИМУЛЯЦИЯ -------------------
+fix gcmc all gcmc 1000 1 1 2 ${m} 0.5 molecule co2_mol overlapcheck yes full_energy yes
+thermo 1000
+thermo_style custom step pe c_co2_mass
+
+# Равновесие
+run 50000
+
+# Производственный прогон
+unfix gcmc
+fix gcmc all gcmc 1000 1 1 2 ${m} 0.5 molecule co2_mol overlapcheck yes full_energy yes
+run 100000
+
+# Вычисление массы адсорбированного CO2
+compute adsorbed all property/atom mol
+compute co2_mass all reduce sum c_adsorbed*mass
+variable m_co2 equal c_co2_mass*1.66054e-24  # Перевод в граммы
+print "${p} ${m_co2}" file /home/chernysheva/MolecularDynamics/Tasks/MOF-5/interface_lammps_test/isotherm.txt append
+
+# Очистка и следующий шаг
+unfix gcmc
+next i
+jump /home/chernysheva/MolecularDynamics/Tasks/MOF-5/interface_lammps_test/in.gcmc loop
+
+# ------------------- ВЫХОД -------------------
+print "GCMC расчеты завершены"
