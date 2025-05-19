@@ -6,7 +6,7 @@ Created on Sat May 17 15:37:48 2025
          960 dihedrals
          576 impropers
 
-           5 atom types
+           7 atom types
            6 bond types
            9 angle types
            3 dihedral types
@@ -23,6 +23,8 @@ Masses
     3    15.999400000 # O_R
     4    12.010700000 # C_R
     5     1.007940000 # H_
+    6    12.010700000
+    7    15.999400000
 
 Bond Coeffs
 
@@ -62,6 +64,8 @@ Pair Coeffs
     3        0.060000        3.118146 # O_R O_R
     4        0.105000        3.430851 # C_R C_R
     5        0.044000        2.571134 # H_ H_
+    6        0.105 3.431
+    7        0.060 3.118 
 
 Atoms
 

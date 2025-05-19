@@ -14,29 +14,48 @@ dielectric      1.0
 box tilt        large
 read_data       data.MOF5
 
-molecule co2_mol CO2.txt
+# Define molecule
+molecule co2_mol CO2.mol
 
-#### Atom Groupings ####
-# group           fram     id   1:424
-#### END Atom Groupings ####
+# Barostat 
+fix             mynpt all npt temp 298.0 298.0 100.0 iso 1.0 1.0 1000.0
 
-dump dall all atom 100 dump_all.lammpstrj
-
-# Настройка термостата и баростата
-fix             mynpt all npt temp 323.0 323.0 100.0 iso 1.0 1.0 1000.0
-
-# Термодинамические параметры
+# Thermo output
 thermo          100
 thermo_style    custom step temp press vol density etotal
 
-# Минимизация энергии перед релаксацией
+# Energy minimization
 min_style       cg
 minimize        1.0e-6 1.0e-8 1000 10000
 
-# Релаксация в NPT ансамбле
+# NPT relaxation
 run             10000
 unfix           mynpt
 
-# Запись релаксированной системы в файл
-write_data      data.MOF5_relaxed
+## GCMC ### 
+create_atoms 0 random 3 3245 NULL mol co2_mol 4585 overlap 2.0 maxtry 50
+
+group           mof     type 1 2 3 4 5
+group           co2     type 6 7
+
+dump dco2 co2 atom 100 dump_co2.lammpstrj
+dump dall all atom 100 dump_all.lammpstrj
+
+compute         co2T co2 temp
+compute_modify  co2T dynamic/dof yes
+compute         mofT mof temp
+
+variable N_co2  equal count(co2)/3
+
+# fix             mynpt all npt temp 323.0 323.0 100.0 iso 1.0 1.0 1000.0
+# thermo          10
+# thermo_style    custom step temp press density atoms v_N_co2
+# run 10000
+
+# fix NPT co2 npt temp 298.0 298.0 100.0 iso 10.0 10.0 1000.0
+fix GCMC co2 gcmc 10 100 0 0 1263 298.0 -5 0.5 mol co2_mol pressure 1.0
+fix AVE all ave/time 10 100 1000 v_N_co2
+thermo          10
+thermo_style    custom step temp press density atoms v_N_co2 
+run 10000
 
