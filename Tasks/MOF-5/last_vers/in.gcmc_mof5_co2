@@ -1,0 +1,110 @@
+# LAMMPS input script for GCMC simulation of CO2 in MOF-5
+
+variable press equal ${p}
+
+# --- Инициализация ---
+units           real
+atom_style      full
+boundary        p p p
+
+# --- Определение стилей потенциалов ---
+# Важно: эти стили должны соответствовать формату коэффициентов в data.MOF5_charged_simple
+# и добавленным коэффициентам для CO2.
+pair_style      lj/cut/coul/long 12.0 # Катофф 12 Ангстрем для LJ и кулона
+bond_style      harmonic
+angle_style     hybrid fourier cosine/periodic harmonic # MOF-5 использует fourier и cosine/periodic, CO2 - harmonic
+dihedral_style  harmonic # Предполагаем, что диэдрали в MOF-5 совместимы с harmonic (K d n)
+improper_style  fourier # Предполагаем, что несобственные углы в MOF-5 совместимы с umbrella (K chi0)
+
+# --- Чтение данных MOF-5 ---
+# Добавляем 2 новых типа атомов (для C и O в CO2), 1 новый тип связи (C=O), 1 новый тип угла (O=C=O)
+read_data       data.MOF5_charged_simple extra/atom/types 2 extra/bond/types 1 extra/angle/types 1
+
+# --- Определение параметров для CO2 ---
+# Массы для новых типов атомов (6: C_CO2, 7: O_CO2)
+mass            6 12.011   # C in CO2
+mass            7 15.9994  # O in CO2
+
+# Pair Coeffs для CO2 (MOF-5 pair_coeffs читаются из data-файла)
+# pair_coeff I J epsilon sigma
+pair_coeff      6 6 0.0514 2.85    # C_CO2 - C_CO2
+pair_coeff      7 7 0.1600 3.02    # O_CO2 - O_CO2
+
+# Правила смешивания для межмолекулярных взаимодействий (например, MOF-CO2)
+# Lorentz-Berthelot по умолчанию для lj/cut/coul/long
+pair_modify     mix arithmetic
+
+# Bond Coeffs для CO2 (тип связи 7)
+# bond_coeff Type K r0
+bond_coeff      7 1000.0 1.16   # C=O
+
+# Angle Coeffs для CO2 (тип угла 10)
+# angle_coeff Type K theta0 (для стиля harmonic)
+angle_coeff     10 harmonic 100.0 180.0 # O=C=O
+
+# --- Настройки дальнодействующих взаимодействий ---
+kspace_style    pppm 1.0e-5
+
+# --- Определение молекулы CO2 ---
+molecule        co2mol CO2.txt
+
+# --- Настройки GCMC ---
+variable        T equal 273.0       # Температура в Кельвинах
+variable        P equal 0.1         # Давление в атмосферах
+variable        fug_coeff equal 1.0 # Коэффициент фугитивности (для идеального газа = 1.0)
+variable        seed equal 12345    # Начальное число для генератора случайных чисел
+
+# Группа для атомов CO2 (типы 6 и 7)
+group           co2_atoms type 6 7
+
+
+# Variables for analysis
+variable N_co2  equal count(co2_atoms)/3
+variable ads_density equal v_N_co2/vol
+
+dump            dall all atom 100 dumps_T273K/dump_npt_${press}.lammpstrj
+
+fix             mynpt all nvt temp 273.0 273.0 100.0
+
+# Thermo output
+thermo          100
+thermo_style    custom step temp press vol density etotal
+run             10000
+unfix           mynpt
+
+
+# Fix GCMC
+# N: выполнять GCMC каждые N шагов
+# Nexchange: количество попыток обмена (вставка/удаление)
+# Ntranslate_rotate_mol: количество попыток трансляции/вращения молекулы
+# Nrigidbody_... : 0, так как CO2 у нас гибкий
+# mol co2mol: используемый шаблон молекулы
+# full_energy: пересчитывать полную энергию системы (рекомендуется)
+# pressure ${P}: давление (LAMMPS вычислит химический потенциал)
+# displace: максимальное смещение для трансляции молекулы (в Ангстремах)
+#fix             gcmc_run all gcmc 100 100 100 0 ${seed} ${T} ${P} ${fug_coeff} mol co2mol full_energy displace 0.5
+fix             GCMC co2_atoms gcmc 100 1000 0 0 12345 273.0 -5.0 0.5 mol co2mol pressure ${press} full_energy group co2_atoms
+
+# --- Настройки вывода ---
+#thermo_style    custom step temp press pe etotal natoms ncmc_insert ncmc_delete ncmc_trans ncmc_rotate ncmc_attempt ncmc_accept atoms_in_gcmc_mol
+
+
+thermo          1000
+thermo_style    custom step temp press v_N_co2 v_ads_density pe ke etotal
+dump            gcmc_dump all atom 500 dumps_T273K/dump.gcmc_mof5_co2_${press}.lammpstrj
+
+# --- Запуск симуляции ---
+# Для GCMC обычно не нужен MD integrator для всей системы, если только не изучается динамика каркаса.
+# Если каркас должен быть подвижен, добавьте fix nvt для атомов MOF-5.
+# Например, если атомы MOF-5 должны оставаться фиксированными:
+# group mof_atoms type <= 5
+# fix freeze_mof mof_atoms setforce 0.0 0.0 0.0
+# Однако, для GCMC лучше, чтобы каркас был термостатирован, если он не абсолютно жесткий.
+# Если вы хотите просто провести GCMC без MD шагов для каркаса:
+# run 0 post no # Это позволит fix gcmc работать без MD шагов
+# Но обычно GCMC совмещают с MD:
+timestep        1.0 # фемтосекунды (если есть MD)
+run             100000 # Количество шагов GCMC/MD
+
+# --- Завершение ---
+print "GCMC simulation finished." 

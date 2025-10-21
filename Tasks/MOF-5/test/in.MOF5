@@ -1,0 +1,84 @@
+units           real
+atom_style      full
+boundary        p p p
+
+# pair_style      lj/cut 12.500
+pair_style      lj/cut/coul/long 12.500
+bond_style      harmonic
+angle_style     hybrid fourier cosine/periodic harmonic
+dihedral_style  harmonic
+improper_style  fourier
+# kspace_style    ewald 0.000001
+
+
+pair_modify     tail yes mix arithmetic
+special_bonds   lj/coul 0.0 0.0 1.0
+dielectric      1.0
+box tilt        large
+read_data       data.MOF5
+
+# kspace_style    pppm 1.0e-6
+kspace_style    ewald 0.000001
+
+
+set type 1 charge -0.55 # O_2
+set type 2 charge 1.05 # Zn3+2
+set type 3 charge -0.32 # O_R
+set type 4 charge 0.64 # C_R
+set type 5 charge 0.09 # H_R
+
+set type 6 charge -0.35 # O
+set type 7 charge 0.7 # C
+
+bond_coeff 7 1600.0 1.16
+bond_coeff 8 500.0 1.54
+
+angle_coeff 10 harmonic 100.0 180.0 
+
+# Define molecule
+molecule co2_mol CO2.mol
+
+dump            dall all atom 100 dump_all.lammpstrj
+# Barostat 
+# fix              mynvt all nvt temp 298.0 298.0 100.0 
+fix             mynpt all npt temp 298.0 298.0 100.0 iso 10.0 10.0 1000.0
+
+# Thermo output
+thermo          100
+thermo_style    custom step temp press vol density etotal
+
+# Energy minimization
+min_style       cg
+minimize        1.0e-6 1.0e-8 1000 10000
+
+# NVT relaxation
+run             10000
+unfix           mynpt
+
+## GCMC ### 
+create_atoms 0 random 100 3245 NULL mol co2_mol 4585 overlap 2.0 maxtry 50
+
+group           mof     type 1 2 3 4 5
+group           co2     type 6 7
+
+dump dco2 co2 atom 100 dump_co2.lammpstrj
+# dump dall all atom 100 dump_all.lammpstrj
+
+compute         co2T co2 temp
+compute_modify  co2T dynamic/dof yes
+compute         mofT mof temp
+
+variable N_co2  equal count(co2)/3
+
+# fix             mynpt all npt temp 298.0 298.0 100.0 iso 1.0 1.0 1000.0
+# thermo          10
+# thermo_style    custom step temp press density atoms v_N_co2
+# run 10000
+
+# fix NPT co2 npt temp 298.0 298.0 100.0 iso 10.0 10.0 1000.0
+fix GCMC co2 gcmc 10 100 0 0 1263 298.0 -0.5 0.5 mol co2_mol pressure 10.0
+fix AVE all ave/time 10 100 1000 v_N_co2
+thermo          10
+thermo_style    custom step temp press density atoms v_N_co2 
+run 10000
+

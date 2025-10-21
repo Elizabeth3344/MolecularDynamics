@@ -1,0 +1,84 @@
+# GCMC моделирование адсорбции CO₂ в MOF-5
+# T = 298K, P = 0.1 атм
+
+units real
+atom_style full
+boundary p p p
+pair_style lj/cut/coul/long 12.0
+bond_style harmonic
+angle_style harmonic
+kspace_style pppm 1.0e-5
+
+# Загружаем структуру MOF-5
+read_data MOF-5.data
+
+# Определяем параметры взаимодействия
+# Параметры Леннарда-Джонса для MOF-5
+pair_style lj/cut/coul/long 12.0
+pair_coeff 1 1 0.0170 2.4616  # Zn
+pair_coeff 2 2 0.0601 3.4046  # O
+pair_coeff 3 3 0.0440 3.7500  # C (карбоксильная)
+pair_coeff 4 4 0.0385 3.6000  # C (ароматический)
+pair_coeff 5 5 0.0152 2.8464  # H
+
+# Параметры ковалентных связей
+bond_style harmonic
+bond_coeff 1 100.0 1.95   # Zn-O
+bond_coeff 2 450.0 1.29   # C-O
+bond_coeff 3 400.0 1.40   # C-C (ароматическая)
+bond_coeff 4 350.0 1.09   # C-H
+
+# Параметры углов
+angle_style harmonic
+angle_coeff 1 60.0 120.0  # O-C-O
+angle_coeff 2 50.0 120.0  # C-C-C (ароматический)
+angle_coeff 3 35.0 120.0  # C-C-H
+
+# Параметры для CO₂ (модель TraPPE)
+pair_coeff 6 6 0.0559 2.8000  # C (CO₂)
+pair_coeff 7 7 0.0157 3.0500  # O (CO₂)
+
+# Применяем правила смешивания Co2 и MOF5
+pair_modify mix arithmetic  # σ_ij = (σ_i + σ_j)/2
+pair_modify mix geometric   # ε_ij = sqrt(ε_i × ε_j)
+
+# Определяем области для GCMC
+region MOF block 0 XSIZE 0 YSIZE 0 ZSIZE
+group framework type 1 2 3 4 5  # типы атомов MOF-5
+group gas type 6 7               # типы атомов CO₂
+
+# Фиксируем каркас MOF-5
+fix FREEZE framework setforce 0.0 0.0 0.0
+
+# Уравновешивание системы
+velocity gas create 298.0 12345
+fix NPT gas nvt temp 298.0 298.0 100.0
+
+# Расчет химического потенциала для CO₂ при P=0.1 атм и T=298K
+# Для идеального газа: μ = kT·ln(Λ³·P/kT)
+# Более точно можно определить с помощью уравнения состояния
+# Для P=0.1 атм при T=298K типичное значение μ ≈ -8.8 ккал/моль
+
+# GCMC моделирование
+fix GCMC gas gcmc 100 100 100 0 29494 298.0 -8.8 0.1 mol CO2.txt &
+    pressure 0.1 full_energy
+
+# Определяем молекулу CO₂
+molecule CO2 CO2.txt
+
+# Вывод данных
+variable N equal count(gas)/3  # количество молекул CO₂
+fix AVE all ave/time 500 10 5000 v_N file adsorption.dat
+
+# Запуск расчета
+timestep 1.0
+thermo 500
+thermo_style custom step temp press v_N pe ke etotal
+dump CONFIG all custom 10000 dump.*.lammpstrj id type x y z
+
+# Уравновешивание
+run 50000
+
+# Сбор статистики
+reset_timestep 0
+run 200000
