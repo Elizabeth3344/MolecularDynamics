@@ -1,0 +1,3077 @@
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/squared
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for angle coefficients (../angle_cosine_squared.cpp:172)
+Last command: read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/squared
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for angle coefficients (../angle_cosine_squared.cpp:172)
+Last command: read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/squared
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for angle coefficients (../angle_cosine_squared.cpp:172)
+Last command: read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/squared
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for angle coefficients (../angle_cosine_squared.cpp:172)
+Last command: read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/squared
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5 extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for angle coefficients (../angle_cosine_squared.cpp:172)
+Last command: read_data data.MOF5 extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/squared
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5 extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for angle coefficients (../angle_cosine_squared.cpp:172)
+Last command: read_data data.MOF5 extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/squared
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5 extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for angle coefficients (../angle_cosine_squared.cpp:172)
+Last command: read_data data.MOF5 extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/squared
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5 extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for angle coefficients (../angle_cosine_squared.cpp:172)
+Last command: read_data data.MOF5 extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/squared
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for angle coefficients (../angle_cosine_squared.cpp:172)
+Last command: read_data data.MOF5
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/squared
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for angle coefficients (../angle_cosine_squared.cpp:172)
+Last command: read_data data.MOF5
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/squared
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for angle coefficients (../angle_cosine_squared.cpp:172)
+Last command: read_data data.MOF5
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/squared
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for angle coefficients (../angle_cosine_squared.cpp:172)
+Last command: read_data data.MOF5
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/squared fourier
+ERROR: Illegal angle_style cosine/squared argument: fourier (../angle.cpp:87)
+Last command: angle_style     cosine/squared fourier
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/squared fourier
+ERROR: Illegal angle_style cosine/squared argument: fourier (../angle.cpp:87)
+Last command: angle_style     cosine/squared fourier
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/squared fourier
+ERROR: Illegal angle_style cosine/squared argument: fourier (../angle.cpp:87)
+Last command: angle_style     cosine/squared fourier
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/squared fourier
+ERROR: Illegal angle_style cosine/squared argument: fourier (../angle.cpp:87)
+Last command: angle_style     cosine/squared fourier
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/periodic fourier
+ERROR: Illegal angle_style cosine/periodic argument: fourier (../angle.cpp:87)
+Last command: angle_style     cosine/periodic fourier
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/periodic fourier
+ERROR: Illegal angle_style cosine/periodic argument: fourier (../angle.cpp:87)
+Last command: angle_style     cosine/periodic fourier
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/periodic fourier
+ERROR: Illegal angle_style cosine/periodic argument: fourier (../angle.cpp:87)
+Last command: angle_style     cosine/periodic fourier
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/periodic fourier
+ERROR: Illegal angle_style cosine/periodic argument: fourier (../angle.cpp:87)
+Last command: angle_style     cosine/periodic fourier
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5 extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for improper coefficients (../improper_umbrella.cpp:259)
+Last command: read_data data.MOF5 extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5 extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for improper coefficients (../improper_umbrella.cpp:259)
+Last command: read_data data.MOF5 extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5 extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for improper coefficients (../improper_umbrella.cpp:259)
+Last command: read_data data.MOF5 extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5 extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for improper coefficients (../improper_umbrella.cpp:259)
+Last command: read_data data.MOF5 extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for improper coefficients (../improper_umbrella.cpp:259)
+Last command: read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for improper coefficients (../improper_umbrella.cpp:259)
+Last command: read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for improper coefficients (../improper_umbrella.cpp:259)
+Last command: read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for improper coefficients (../improper_umbrella.cpp:259)
+Last command: read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/periodic
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for angle coefficients (../angle_cosine_periodic.cpp:204)
+Last command: read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/periodic
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for angle coefficients (../angle_cosine_periodic.cpp:204)
+Last command: read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/periodic
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for angle coefficients (../angle_cosine_periodic.cpp:204)
+Last command: read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     cosine/periodic
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for angle coefficients (../angle_cosine_periodic.cpp:204)
+Last command: read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.035 seconds
+molecule gas_mol co2.mol
+ERROR on proc 0: Unexpected line in molecule file while skipping Coords section:
+Types
+ (../molecule.cpp:2175)
+Last command: molecule gas_mol co2.mol
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.036 seconds
+molecule gas_mol co2.mol
+ERROR on proc 0: Unexpected line in molecule file while skipping Coords section:
+Types
+ (../molecule.cpp:2175)
+Last command: molecule gas_mol co2.mol
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.035 seconds
+molecule gas_mol co2.mol
+ERROR on proc 0: Unexpected line in molecule file while skipping Coords section:
+Types
+ (../molecule.cpp:2175)
+Last command: molecule gas_mol co2.mol
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.039 seconds
+molecule gas_mol co2.mol
+ERROR on proc 0: Unexpected line in molecule file while skipping Coords section:
+Types
+ (../molecule.cpp:2175)
+Last command: molecule gas_mol co2.mol
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.035 seconds
+molecule gas_mol co2.mol
+ERROR: Invalid format in Bonds section of molecule file:  (../molecule.cpp:1059)
+Last command: molecule gas_mol co2.mol
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.036 seconds
+molecule gas_mol co2.mol
+ERROR: Invalid format in Bonds section of molecule file:  (../molecule.cpp:1059)
+Last command: molecule gas_mol co2.mol
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.035 seconds
+molecule gas_mol co2.mol
+ERROR: Invalid format in Bonds section of molecule file:  (../molecule.cpp:1059)
+Last command: molecule gas_mol co2.mol
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.037 seconds
+molecule gas_mol co2.mol
+ERROR: Invalid format in Bonds section of molecule file:  (../molecule.cpp:1059)
+Last command: molecule gas_mol co2.mol
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.036 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix mygcmc gas gcmc 10 500 500 6 78422 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid/small molecule
+    fix mygcmc gas gcmc 10 500 500 6 78422 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid/small molecule
+    fix mygcmc gas gcmc 10 500 500 6 78422 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid/small molecule
+ERROR: Illegal fix gcmc command (../fix_gcmc.cpp:388)
+Last command:     fix mygcmc gas gcmc 10 500 500 6 78422 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid/small molecule
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.035 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix mygcmc gas gcmc 10 500 500 6 78422 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid/small molecule
+    fix mygcmc gas gcmc 10 500 500 6 78422 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid/small molecule
+    fix mygcmc gas gcmc 10 500 500 6 78422 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid/small molecule
+ERROR: Illegal fix gcmc command (../fix_gcmc.cpp:388)
+Last command:     fix mygcmc gas gcmc 10 500 500 6 78422 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid/small molecule
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.035 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix mygcmc gas gcmc 10 500 500 6 78422 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid/small molecule
+    fix mygcmc gas gcmc 10 500 500 6 78422 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid/small molecule
+    fix mygcmc gas gcmc 10 500 500 6 78422 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid/small molecule
+ERROR: Illegal fix gcmc command (../fix_gcmc.cpp:388)
+Last command:     fix mygcmc gas gcmc 10 500 500 6 78422 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid/small molecule
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.036 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix mygcmc gas gcmc 10 500 500 6 78422 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid/small molecule
+    fix mygcmc gas gcmc 10 500 500 6 78422 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid/small molecule
+    fix mygcmc gas gcmc 10 500 500 6 78422 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid/small molecule
+ERROR: Illegal fix gcmc command (../fix_gcmc.cpp:388)
+Last command:     fix mygcmc gas gcmc 10 500 500 6 78422 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid/small molecule
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for improper coefficients (../improper_umbrella.cpp:259)
+Last command: read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for improper coefficients (../improper_umbrella.cpp:259)
+Last command: read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for improper coefficients (../improper_umbrella.cpp:259)
+Last command: read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  umbrella
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+ERROR: Incorrect args for improper coefficients (../improper_umbrella.cpp:259)
+Last command: read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.036 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid molecule
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid molecule
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid molecule
+ERROR: Atom type must be zero in fix gcmc mol command (../fix_gcmc.cpp:169)
+Last command:     fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid molecule
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.036 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid molecule
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid molecule
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid molecule
+ERROR: Atom type must be zero in fix gcmc mol command (../fix_gcmc.cpp:169)
+Last command:     fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid molecule
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.035 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid molecule
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid molecule
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid molecule
+ERROR: Atom type must be zero in fix gcmc mol command (../fix_gcmc.cpp:169)
+Last command:     fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid molecule
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.035 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid molecule
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid molecule
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid molecule
+ERROR: Atom type must be zero in fix gcmc mol command (../fix_gcmc.cpp:169)
+Last command:     fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid molecule
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.035 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint molecule
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint molecule
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid myint molecule
+ERROR: Illegal fix gcmc command (../fix_gcmc.cpp:388)
+Last command:     fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint molecule
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.036 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint molecule
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint molecule
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid myint molecule
+ERROR: Illegal fix gcmc command (../fix_gcmc.cpp:388)
+Last command:     fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint molecule
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.035 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint molecule
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint molecule
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid myint molecule
+ERROR: Illegal fix gcmc command (../fix_gcmc.cpp:388)
+Last command:     fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint molecule
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.036 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint molecule
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint molecule
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid myint molecule
+ERROR: Illegal fix gcmc command (../fix_gcmc.cpp:388)
+Last command:     fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint molecule
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.035 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid myint
+ERROR: Atom type must be zero in fix gcmc mol command (../fix_gcmc.cpp:169)
+Last command:     fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.036 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid myint
+ERROR: Atom type must be zero in fix gcmc mol command (../fix_gcmc.cpp:169)
+Last command:     fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.037 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid myint
+ERROR: Atom type must be zero in fix gcmc mol command (../fix_gcmc.cpp:169)
+Last command:     fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.002 seconds
+  read_data CPU = 0.047 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 500 6 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid myint
+ERROR: Atom type must be zero in fix gcmc mol command (../fix_gcmc.cpp:169)
+Last command:     fix mygcmc gas gcmc 10 500 500 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.035 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 500 0 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 500 0 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 500 0 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid myint
+ERROR: Cannot use fix gcmc rigid with MC moves (../fix_gcmc.cpp:189)
+Last command:     fix mygcmc gas gcmc 10 500 500 0 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.036 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 500 0 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 500 0 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 500 0 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid myint
+ERROR: Cannot use fix gcmc rigid with MC moves (../fix_gcmc.cpp:189)
+Last command:     fix mygcmc gas gcmc 10 500 500 0 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.036 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 500 0 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 500 0 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 500 0 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid myint
+ERROR: Cannot use fix gcmc rigid with MC moves (../fix_gcmc.cpp:189)
+Last command:     fix mygcmc gas gcmc 10 500 500 0 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.036 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 500 0 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 500 0 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 500 0 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid myint
+ERROR: Cannot use fix gcmc rigid with MC moves (../fix_gcmc.cpp:189)
+Last command:     fix mygcmc gas gcmc 10 500 500 0 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.038 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 500 0 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 500 0 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 500 0 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid myint
+ERROR: Cannot use fix gcmc rigid with MC moves (../fix_gcmc.cpp:189)
+Last command:     fix mygcmc gas gcmc 10 500 500 0 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.038 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 0 0 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 0 0 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 0 0 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid myint
+    # fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    variable n_mols equal count(gas)/3
+    thermo_style custom step temp press v_P_atm v_n_mols
+    thermo 1000
+    run 5000
+Ewald initialization ...
+WARNING: Using kspace solver on system with no charge (../kspace.cpp:314)
+ERROR: Must use 'kspace_modify gewald' for uncharged system (../ewald.cpp:168)
+Last command:     run 5000
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.038 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 0 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 0 6 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 0 6 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid myint
+ERROR: Atom type must be zero in fix gcmc mol command (../fix_gcmc.cpp:169)
+Last command:     fix mygcmc gas gcmc 10 500 0 6 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.038 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 0 0 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 0 0 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 0 0 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid myint
+    # fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    variable n_mols equal count(gas)/3
+    thermo_style custom step temp press v_P_atm v_n_mols
+    thermo 1000
+    run 5000
+Ewald initialization ...
+WARNING: Using kspace solver on system with no charge (../kspace.cpp:314)
+ERROR: Must use 'kspace_modify gewald' for uncharged system (../ewald.cpp:168)
+Last command:     run 5000
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.038 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 0 0 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 0 0 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 0 0 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid myint
+    # fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    variable n_mols equal count(gas)/3
+    thermo_style custom step temp press v_P_atm v_n_mols
+    thermo 1000
+    run 50
+Ewald initialization ...
+WARNING: Using kspace solver on system with no charge (../kspace.cpp:314)
+ERROR: Must use 'kspace_modify gewald' for uncharged system (../ewald.cpp:168)
+Last command:     run 50
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+kspace_modify gewald
+ERROR: Illegal kspace_modify command (../kspace.cpp:485)
+Last command: kspace_modify gewald
+units real
+atom_style full
+boundary p p p
+
+pair_style lj/cut/coul/long 12.5
+kspace_style ewald 1.0e-4
+kspace_modify gewald 1.0e-4
+pair_modify mix arithmetic
+
+bond_style      harmonic
+angle_style     hybrid cosine/periodic fourier
+dihedral_style  harmonic
+improper_style  fourier
+
+read_data data.MOF5_final extra/atom/types 2 extra/bond/types 2 extra/angle/types 2
+Reading data file ...
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3392 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  8 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  triclinic box = (0 0 0) to (52.058726 52.063168 52.056692) with tilt (0.006304 -0.004338 0.005326)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  4096 bonds
+  reading angles ...
+  7296 angles
+  reading dihedrals ...
+  7680 dihedrals
+  reading impropers ...
+  4608 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    22 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.038 seconds
+molecule gas_mol co2.mol
+Read molecule template gas_mol:
+# CO2 TraPPE
+  1 molecules
+  0 fragments
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+
+pair_coeff 6 6 0.05365 2.8
+pair_coeff 7 7 0.1569 3.05
+
+group gas type 6:7
+0 atoms in group gas
+variable T equal 298.0
+variable p_step index 0.1 0.5 1.0 5.0 10.0 20.0
+label loop
+    variable P_atm equal v_p_step*0.986923
+    reset_timestep 0
+    fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 ${T} 100.0
+    fix myint gas rigid/nvt/small molecule temp 298 298 100.0
+  create bodies CPU = 0.000 seconds
+  0 rigid bodies with 0 atoms
+  0 = max distance from body owner to body atom
+    fix mygcmc gas gcmc 10 500 0 0 92774 ${T} -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 0 0 92774 298 -1.0 1.0 mol gas_mol pressure ${P_atm} fugacity_coeff 1.0 rigid myint
+    fix mygcmc gas gcmc 10 500 0 0 92774 298 -1.0 1.0 mol gas_mol pressure 0.0986923 fugacity_coeff 1.0 rigid myint
+    # fix myint gas rigid/nvt/small molecule temp ${T} ${T} 100.0
+    variable n_mols equal count(gas)/3
+    thermo_style custom step temp press v_P_atm v_n_mols
+    thermo 1000
+    run 50
+Ewald initialization ...
+WARNING: Using kspace solver on system with no charge (../kspace.cpp:314)
+  using 12-bit tables for long-range coulomb (../kspace.cpp:342)
+  G vector (1/distance) = 0.0001
+  estimated absolute RMS force accuracy = 0
+  estimated relative force accuracy = 0
+  KSpace vectors: actual max1d max3d = 3 1 13
+                  kxmax kymax kzmax  = 1 1 1
+Generated 21 of 21 mixed pair_coeff terms from arithmetic mixing rule
+ERROR: All bond coeffs are not set (../bond.cpp:84)
+Last command:     run 50
