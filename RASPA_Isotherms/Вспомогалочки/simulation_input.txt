@@ -1,0 +1,27 @@
+SimulationType MonteCarlo
+NumberOfCycles 10000                # Общее время "жизни" симуляции
+NumberOfInitializationCycles 1000   # Время на "разогрев" (не идет в статистику)
+PrintEvery 100
+RestartFile no
+
+Movies yes                          # будет делать движущуюся симуляцию
+WriteMoviesEvery 100
+
+Forcefield Local                    # будет искать forcefield в этой же папке, откуда запускаем симуляцию (иначе вылетает ошибка)
+UseChargesFromCIFFile yes           # читаем заряды из cif файла (они там появляются благодаря python-скрипту)
+
+Framework 0
+FrameworkName simulation_structure  # Имя файла .cif (без расширения) (его генерит питон, так как предварительно нужно почистить и добавить заряды)
+UnitCells 1 1 1                     # Размер коробки
+HeliumVoidFraction 0.29             # Для пересчета всего кол-ва молекул газа в ячейке в кол-во адсорбированных молекул
+                                    # число стоит наобум, надо пересчитать на гелием для точности рассчетов
+ExternalTemperature 323.0
+ExternalPressure 100000.0
+
+Component 0 MoleculeName CO2
+MoleculeDefinition TraPPE           # модель молекулы газа, ищет в CO2.def
+TranslationProbability 0.5          # как часто будем применять перемещение молекул газа
+RotationProbability 0.5             # как часто будем применять поворот молекул газа
+ReinsertionProbability 0.5          # как часто будем применять удаление и вставку в другое место молекул газа
+SwapProbability 1.0                 # как часто будем применять удаление/вставку молекул газа (делаем это чаще всего)
+CreateNumberOfMolecules 0

@@ -1,0 +1,22 @@
+# Для рассчета ДОЛИ ПУСТОГО ОБЪЕМА конкретного MOF - сколько молекул газа попадет в моф без адсорбции 
+# (их потом нужно будет вычесть из общего числа молекул в мофе, которое мы найдем)
+
+SimulationType MonteCarlo
+NumberOfCycles 5000
+NumberOfInitializationCycles 0
+PrintEvery 1000
+RestartFile no
+
+Forcefield Local
+UseChargesFromCIFFile yes
+
+Framework 0
+FrameworkName imulation_structure
+UnitCells 1 1 1
+ExternalTemperature 298.0
+ExternalPressure 100000.0
+
+Component 0 MoleculeName He
+MoleculeDefinition He
+WidomProbability 1.0                    # только вставляем, но не двигаем, так как считаем энергию вставки
+CreateNumberOfMolecules 0

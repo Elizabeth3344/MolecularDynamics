@@ -1,0 +1,29 @@
+SimulationType MonteCarlo
+NumberOfCycles 20000
+NumberOfInitializationCycles 5000
+PrintEvery 1000
+RestartFile no
+
+Movies MOVIE_FLAG
+WriteMoviesEvery 100
+
+WriteVTKGrid MOVIE_FLAG
+WriteVTKGridEvery 1000
+
+Forcefield Local
+UseChargesFromCIFFile yes
+
+Framework 0
+FrameworkName simulation_structure
+UnitCells 1 1 1
+HeliumVoidFraction 0.79
+ExternalTemperature TEMP_PLACEHOLDER
+ExternalPressure PRES_PLACEHOLDER
+
+Component 0 MoleculeName REPLACE_ME
+MoleculeDefinition REPLACE_ME
+TranslationProbability 0.5
+RotationProbability 0.5
+ReinsertionProbability 0.5
+SwapProbability 1.0
+CreateNumberOfMolecules 0
